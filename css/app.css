@@ -29,13 +29,13 @@ html {
 body {
     background-color: var(--cream);
 }
-.contenedor {
+.container {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
 @media (min-width: 1440px) { 
-    .contenedor {
+    .container {
         max-width: 600px;
         width: 50%;
     }
@@ -49,10 +49,9 @@ body {
     .card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 100px;
     }
 }
-.imagen {
+.image {
     background-image: url(/images/image-product-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,7 +60,7 @@ body {
     border-top-right-radius: 10px;
 }
 @media (min-width: 1440px) { 
-    .imagen {
+    .image {
         background-image: url(/images/image-product-desktop.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -71,15 +70,15 @@ body {
         border-bottom-left-radius: 10px;
     }
 }
-.contenido {
+.content {
     padding: 20px;
 }
 @media (min-width: 1440px) { 
-    .contenido {
+    .content {
         padding: 30px;
     }
 }
-.perfume {
+.name {
     font-family: var(--principalFont);
     color: var(--darkGrayish);
     text-transform: uppercase;
@@ -88,41 +87,41 @@ body {
     margin-top: 0;
 }
 @media (min-width: 1400px) { 
-    .prefume {
+    .name {
         margin-top: 0;
     }
 }
-.producto {
+.product {
     font-family: var(--secundaryFont);
     line-height: 1;
     margin-top: 10px; 
 }
-.descripcion {
+.description {
     color: var(--darkGrayish);
     font-family: var(--principalFont);
     font-size: 12px;
     line-height: 2;
 }
-.grid-precios {
+.grid-prices {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     margin: 40px 0 10px 0;
 }
-.precioxl {
+.pricexl {
     font-family: var(--secundaryFont);
     color: var(--darkCyan);
     font-size: 30px;
     margin: 0;
 }
-.precios {
+.prices {
     font-family: var(--principalFont);
     color: var(--darkGrayish);
     font-size: 15px;
     text-decoration: line-through;
     margin: 0;
 }
-.boton {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +132,7 @@ body {
     color: var(--white);
     border-radius: 10px;
 }
-.boton:hover {
+.button:hover {
     cursor: pointer;
 }
 .addtocart {
