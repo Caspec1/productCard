@@ -1,0 +1,148 @@
+:root {
+
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    
+    /* Primary */
+    --mobile: 375px;
+    --desktop: 1440px; 
+
+    /* Neutrals */
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayish: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --principalFont: 'Montserrat', sans-serif;
+    --secundaryFont: 'Fraunces', serif;
+
+}
+
+/* Globals */
+
+html {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--cream);
+}
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+@media (min-width: 1440px) { 
+    .contenedor {
+        max-width: 600px;
+        width: 50%;
+    }
+}
+.card {
+    width: 90%;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+@media (min-width: 1440px) { 
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.imagen {
+    background-image: url(/images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+@media (min-width: 1440px) { 
+    .imagen {
+        background-image: url(/images/image-product-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+.contenido {
+    padding: 20px;
+}
+@media (min-width: 1440px) { 
+    .contenido {
+        padding: 30px;
+    }
+}
+.perfume {
+    font-family: var(--principalFont);
+    color: var(--darkGrayish);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 10px;
+    margin-top: 0;
+}
+@media (min-width: 1400px) { 
+    .prefume {
+        margin-top: 0;
+    }
+}
+.producto {
+    font-family: var(--secundaryFont);
+    line-height: 1;
+    margin-top: 10px; 
+}
+.descripcion {
+    color: var(--darkGrayish);
+    font-family: var(--principalFont);
+    font-size: 12px;
+    line-height: 2;
+}
+.grid-precios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 40px 0 10px 0;
+}
+.precioxl {
+    font-family: var(--secundaryFont);
+    color: var(--darkCyan);
+    font-size: 30px;
+    margin: 0;
+}
+.precios {
+    font-family: var(--principalFont);
+    color: var(--darkGrayish);
+    font-size: 15px;
+    text-decoration: line-through;
+    margin: 0;
+}
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: var(--darkCyan);
+    text-align: center;
+    color: var(--white);
+    border-radius: 10px;
+}
+.boton:hover {
+    cursor: pointer;
+}
+.addtocart {
+    font-family: var(--principalFont);
+    font-size: 15px;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
